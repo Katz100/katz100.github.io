@@ -36,6 +36,10 @@ details {
     margin: 20px
 }
 
+img {
+    display: block;
+    margin: 0 auto
+}
 summary {
     cursor: pointer;
 }
@@ -45,6 +49,10 @@ summary {
     padding: 15px;
     background-color: #122a5c;
     margin-top: 5px
+}
+
+footer {
+    text-align: center;
 }
 .source {
     color: white
