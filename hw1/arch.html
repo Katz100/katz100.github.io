@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <div id="heading">
+        <h3>CS Topics</h3>
+        <nav>
+            <a href="index.html">Mobile Apps</a>
+            <a href="ios-android.html">iOS/Android</a>
+            <a href="sdk.html">Mobile SDKs</a>
+            <a class="current-page" href="arch.html">Architecture</a>
+        </nav>
+    </div>
+    <main>
+        <br>
+        <h1 class="title-text">Architecture</h1>
+        <figure>
+            <center><img src="img/arch.png" alt="android and ios"></center>
+        </figure>
+
+        <details>
+            <summary>Application Architecture Patterns</summary>
+            <div class="summary-content">
+                <p>Mobile applications are typically structured using architectural patterns to
+                    separate concerns and improve maintainability.</p>
+
+                <ul>
+                    <li><strong>MVC (Model–View–Controller):</strong> Separates data (Model), user interface (View),
+                        and business logic (Controller).</li>
+                    <li><strong>MVP (Model–View–Presenter):</strong> The Presenter handles logic and communicates
+                        between Model and View.</li>
+                    <li><strong>MVVM (Model–View–ViewModel):</strong> Common in Android and iOS development.
+                        The ViewModel manages UI-related data and supports reactive programming.</li>
+                </ul>
+
+                <h3>Layered Architecture</h3>
+                <p>Mobile systems are typically divided into layers:</p>
+
+                <ul>
+                    <li><strong>Presentation Layer:</strong> User interface and interaction logic.</li>
+                    <li><strong>Business Logic Layer:</strong> Core functionality and processing rules.</li>
+                    <li><strong>Data Layer:</strong> Manages local databases, APIs, and data storage.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details>
+            <summary>Sources</summary>
+            <div class="summary-content">
+                <ul>
+                    <li><a class="source" href="https://developer.android.com/guide/components/fundamentals">Android
+                            Fundamentals</a></li>
+                    <li><a class="source" href="https://developer.apple.com/documentation">Apple Documentation</a></li>
+                </ul>
+            </div>
+        </details>
+    </main>
+
+    <center>
+        <footer>
+            CST336 Internet Programming. 2026&copy; Hopkins <br>
+            <img src="img/csumblogo (1).png" alt="csumb logo">
+        </footer>
+    </center>
+</body>
+
+</html>

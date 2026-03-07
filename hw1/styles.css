@@ -1,0 +1,51 @@
+body {
+    background-color: #01016e;
+    color: white;
+}
+
+.title-text {
+    text-align: center;
+}
+
+#heading {
+    display: flex;
+}
+
+#heading h3 {
+    margin: 0px 15px;
+}
+
+#heading a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.17em;
+    padding: 15px;
+}
+
+#heading a:hover {
+    color: #4da6ff;
+    transition: 0.5s;
+}
+
+#heading .current-page {
+    color: #4da6ff;
+    border-bottom: 3px solid #4da6ff;
+}
+
+details {
+    margin: 20px
+}
+
+summary {
+    cursor: pointer;
+}
+.summary-content {
+    border: 3px solid #4DA6FF;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #122a5c;
+    margin-top: 5px
+}
+.source {
+    color: white
+}
