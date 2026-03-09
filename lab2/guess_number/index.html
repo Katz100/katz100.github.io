@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Guess a Number </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Guess the Number!</h1>
+        <h2>Guess a number between 1 and 99 in seven attempts!</h2>
+        <div id="guessesLeft"></div>
+    </header>
+    <br>
+    <div id="main">
+        <div id="guess-field">
+            Enter a guess:
+            <input title="guess" type="text" id="playerGuess" size="5">
+            <button id="guessBtn"> Guess </button>
+        </div>
+        <button id="resetBtn"> Reset </button>
+        <div id="feedback"></div>
+        <div> Previous Guesses:
+            <span id="guesses"></span>
+        </div>
+        <div id="wins">Wins: </div>
+        <div id="losses">Losses: </div>
+    </div>
+
+    <footer>
+        <hr>
+        CST336 Internet Programming. 2026&copy; Hopkins <br>
+        <strong>Disclaimer:</strong> The information in this webpage is fictitious. <br>
+        <img src="img/csumblogo.png" alt="csumb logo">
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

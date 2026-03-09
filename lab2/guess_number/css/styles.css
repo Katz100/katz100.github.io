@@ -1,0 +1,38 @@
+header {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(132, 214, 241, 0.8);
+}
+
+#main {
+    background-color: rgba(132, 214, 241, 0.8);
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid darkblue;
+    text-align: center;
+}
+
+#guess-field {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    margin: 20px 20px;
+    padding: 50px;
+    font-size: larger;
+    font-style: oblique;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(51, 230, 230);
+}
+
+body {
+    background-image: url("../img/background.jpg");
+}
