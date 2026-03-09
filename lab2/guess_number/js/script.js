@@ -56,7 +56,7 @@ function checkGuess() {
     } else {
         document.querySelector("#guesses").textContent += guess + " ";
         if (attempts == 7) {
-            feedback.textContent = "You ran out of attempts!";
+            feedback.textContent = "You ran out of attempts! The random number was " + randomNumber;
             feedback.style.color = "red";
             losses++;
             gameOver();

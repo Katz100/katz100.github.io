@@ -28,9 +28,25 @@ header {
     font-style: oblique;
 }
 
+#enter-text {
+    font-size: 1.8em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 footer {
     text-align: center;
     background-color: rgb(51, 230, 230);
+}
+
+#resetBtn {
+    background-color: rgba(255, 0, 0, 0.8);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+#guessBtn {
+    background-color: rgba(0, 0, 255, 0.5);
+    font-family:'Courier New', Courier, monospace
 }
 
 body {
