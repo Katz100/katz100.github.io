@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2</title>
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="heading">
+        <h1 id="titleText">US Geography Quiz</h1>
+        <h2 id="subtitleText">Can you get all 10 questions correctly?</h2>
+    </div>
+
+    <div id="content">
+        <div id="q1">
+            <form>
+                <p class="question"><b>1. Multiple Choice</b><br>Which state has the largest coastline in the United
+                    States? <span id="q1-image"><img src="" alt="correct/incorrect"> </span></p>
+                <label>
+                    <input type="radio" name="q1" value="california">
+                    California
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q1" value="florida">
+                    Florida
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q1" value="alaska">
+                    Alaska
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q1" value="hawaii">
+                    Hawaii
+                </label><br>
+            </form>
+        </div>
+
+        <div id="q2">
+            <form>
+                <p class="question"><b>2. Short Answer</b><br>Name the river that flows through the Grand Canyon <span
+                        id="q2-image"><img src="" alt="correct/incorrect"> </span></p>
+
+                <label>
+                    <input type="text" name="q2" title="fill-in-the-blank" placeholder="Answer here">
+                </label>
+            </form>
+        </div>
+
+        <div id="q3">
+            <form>
+                <p class="question"><b>3. Fill in the Blank</b><br>The capital of Nevada is <span id="q3-image"><img
+                            src="" alt="correct/incorrect"> </span></p>
+                <label>
+                    <input type="text" name="q3" title="fill-in-the-blank" placeholder="Answer here">
+                </label>
+            </form>
+        </div>
+
+        <div id="q4">
+            <form>
+                <p class="question"><b>4. True or False</b><br>The Appalachian Mountains are older than the Rocky
+                    Mountains. <span id="q4-image"><img src="" alt="correct/incorrect"> </span></p>
+                <label for="true/false">
+                </label>
+                <select id="q4-select" name="true/false" title="true/false">
+                    <option value="">-- Choose --</option>
+                    <option value="True">True</option>
+                    <option value="False">False</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="q5">
+            <form>
+                <p class="question"><b>5. Multiple Choice</b><br>Which state is NOT part of the Four Corners region?
+                    <span id="q5-image"><img src="" alt="correct/incorrect"> </span>
+                </p>
+                <label>
+                    <input type="radio" name="q5" value="arizona">
+                    Arizona
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q5" value="utah">
+                    Utah
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q5" value="colorado">
+                    Colorado
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q5" value="nevada">
+                    Nevada
+                </label><br>
+            </form>
+            </form>
+        </div>
+
+        <div id="q6">
+            <form>
+                <p class="question"><b>6. True or False</b><br>Lake Superior is the largest freshwater lake by surface
+                    area in the United States.
+                    Mountains. <span id="q6-image"><img src="" alt="correct/incorrect"> </span></p>
+                <label for="true/false">
+                </label>
+                <select id="q6-select" name="true/false" title="true/false">
+                    <option value="">-- Choose --</option>
+                    <option value="True">True</option>
+                    <option value="False">False</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="q7">
+            <form>
+                <p class="question"><b>7. Multiple Select</b><br>Which of the following states border the Gulf of
+                    Mexico? <span id="q7-image"><img src="" alt="correct/incorrect"> </span></p>
+
+                <label>
+                    <input type="checkbox" name="q7" value="alabama">
+                    Alabama
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="q7" value="georgia">
+                    Georgia
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="q7" value="louisiana">
+                    Louisiana
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="q7" value="mississippi">
+                    Mississippi
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="q7" value="south-carolina">
+                    South Carolina
+                </label><br>
+            </form>
+        </div>
+
+        <div id="q8">
+            <form>
+                <p class="question"><b>8. Numeric Response</b><br> How many U.S states border Canada? <span
+                        id="q8-image"><img src="" alt="correct/incorrect"> </span></p>
+                <label>
+                    <input type="text" name="q8" title="fill-in-the-blank" placeholder="Answer here">
+                </label>
+            </form>
+        </div>
+
+        <div id="q9">
+            <form>
+                <p class="question"><b>9. Short Answer</b><br> What is the name of the desert that covers much of
+                    southern Arizona and southeastern California? <span id="q9-image"><img src=""
+                            alt="correct/incorrect"> </span></p>
+                <label>
+                    <input type="text" name="q9" title="fill-in-the-blank" placeholder="Answer here">
+                </label>
+            </form>
+        </div>
+
+        <div id="q10">
+            <form>
+                <p class="question"><b>10. Multiple Choice</b><br>Which U.S. state is home to the majority of Yellowstone National Park?
+                    <span id="q10-image"><img src="" alt="correct/incorrect"> </span>
+                </p>
+                <label>
+                    <input type="radio" name="q10">
+                    <div class="random" id="q10-r0">random</div>
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q10">
+                    <div class="random" id="q10-r1">random</div>
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q10">
+                    <div class="random" id="q10-r2">random</div>
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q10">
+                    <div class="random" id="q10-r3">random</div>
+                </label><br>
+            </form>
+            </form>
+        </div>
+
+        <button id="submitBtn">Submit Answers</button><br>
+        <button id="resetBtn">Reset</button>
+        <div id="correctTotal"></div>
+        <div id="congratsMsg"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

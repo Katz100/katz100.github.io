@@ -1,0 +1,11 @@
+.random {
+    display: inline;
+}
+
+#content img {
+    display: none;
+}
+
+#resetBtn {
+    display: none;
+}
