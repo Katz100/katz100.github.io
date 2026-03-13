@@ -35,6 +35,7 @@ function shuffle(array) {
 }
 
 function onSumbitAnswersClicked() {
+    correctAnswers = 0;
     try {
         if (checkQ1()) correctAnswers++;
         if (checkQ2()) correctAnswers++;
@@ -49,15 +50,18 @@ function onSumbitAnswersClicked() {
 
         document.querySelector("#submitBtn").style.display = "none";
         document.querySelector("#resetBtn").style.display = "inline";
+        document.querySelector("#correctTotal").style.display = "block";
         document.querySelector("#correctTotal").innerHTML = `
                 <p>You got ${correctAnswers}/10 questions correct</p>
                 <p> ${correctAnswers * 10} points total </p>
+                <p> You have taken this quiz ${getQuizTimesTaken()} times</p>
             `
 
         if (correctAnswers >= 8) {
             document.querySelector("#congratsMsg").innerHTML = `
                 <p>Congratulations!! You got 80% or more of the questions correct!</p>
             `
+            document.querySelector("#congratsMsg").style.display = "block";
         }
         incrementQuizTimesTaken();
     } catch (error) {
@@ -71,6 +75,7 @@ function onSumbitAnswersClicked() {
 
 function onResetClicked() {
     document.querySelector("#submitBtn").style.display = "inline";
+    document.querySelector("#correctTotal").style.display = "none";
     document.querySelector("#resetBtn").style.display = "none";
     document.querySelectorAll("#content img").forEach(img => {
         img.style.display = "none";
@@ -78,6 +83,7 @@ function onResetClicked() {
     correctAnswers = 0;
     document.querySelector("#correctTotal").innerHTML = ``
     document.querySelector("#congratsMsg").innerHTML = ``
+    document.querySelector("#congratsMsg").style.display = "none";
 }
 
 function getQuizTimesTaken() {
