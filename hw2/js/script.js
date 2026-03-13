@@ -48,6 +48,7 @@ function onSumbitAnswersClicked() {
         if (checkQ9()) correctAnswers++;
         if (checkQ10()) correctAnswers++;
 
+        incrementQuizTimesTaken();
         document.querySelector("#submitBtn").style.display = "none";
         document.querySelector("#resetBtn").style.display = "inline";
         document.querySelector("#correctTotal").style.display = "block";
@@ -63,7 +64,6 @@ function onSumbitAnswersClicked() {
             `
             document.querySelector("#congratsMsg").style.display = "block";
         }
-        incrementQuizTimesTaken();
     } catch (error) {
         alert("Please make sure to answer all questions.");
         document.querySelectorAll("#content img").forEach(img => {
