@@ -2,7 +2,7 @@ document.querySelector("#zip").addEventListener("change", displayCity);
 document.querySelector("#state").addEventListener("change", displatCounties);
 document.querySelector("#username").addEventListener("change", checkUsername);
 document.querySelector("#password").addEventListener("click", suggestPassword);
-document.querySelector("#signupForm").addEventListener("submit", function (event) {
+document.querySelector("#signupForm").addEventListener("submit", event => {
     validateForm(event);
 });
 
@@ -17,6 +17,7 @@ function validateForm(e) {
 
     if (username.length == 0) {
         document.querySelector("#usernameError").innerHTML = "Username required!";
+        document.querySelector("#usernameError").style.color = "red";
         isValid = false;
     } else {
         document.querySelector("#usernameError").innerHTML = "";
