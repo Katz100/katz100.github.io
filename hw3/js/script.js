@@ -1,5 +1,5 @@
 async function validLocation(location) {
-    let url = `http://api.weatherapi.com/v1/current.json?key=ca2cf58ade6a47579ac155427262003&q=${location}&aqi=no`;
+    let url = `https://api.weatherapi.com/v1/current.json?key=ca2cf58ade6a47579ac155427262003&q=${location}&aqi=no`;
     try {
         let response = await fetch(url);
         return response.ok;
@@ -9,7 +9,7 @@ async function validLocation(location) {
 }
 
 async function getWeatherData(location) {
-    let url = `http://api.weatherapi.com/v1/current.json?key=ca2cf58ade6a47579ac155427262003&q=${location}&aqi=no`;
+    let url = `https://api.weatherapi.com/v1/current.json?key=ca2cf58ade6a47579ac155427262003&q=${location}&aqi=no`;
     try {
         let response = await fetch(url);
         let data = await response.json();
